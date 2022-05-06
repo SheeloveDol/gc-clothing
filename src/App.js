@@ -1,22 +1,13 @@
-import { Routes, Route, Outlet } from 'react-router-dom';
+import { Routes, Route} from 'react-router-dom';
 
+import Navigation from './routes/navigation/navigation.component';
 import Home from './routes/home/home.component'
 
 
 const App = () => {
 
-  const Navigation = () => {
-    return (
-      <div>
-        <div>
-          <h1>I am a Nav Bar</h1>
-        </div>
-        <Outlet />
-      </div>
-    )
-  }
-
-  const Apple = () => {
+  
+  const Shop = () => {
     return (
       <h1>This is the Apple store page. Still under construction</h1>
     )
@@ -26,7 +17,7 @@ const App = () => {
     <Routes>
       <Route path='/' element={<Navigation />} >
       <Route index element={<Home />} />
-      <Route path='/apple' element={<Apple />} />
+      <Route path='/shop' element={<Shop />} />
       </Route>
       
     </Routes>
