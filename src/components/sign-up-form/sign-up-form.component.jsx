@@ -12,7 +12,7 @@ import {
   createUserDocumentFromAuth,
 } from '../../utils/firebase/firebase.utils';
 
-
+ 
 
 const defaultFormFields = {
   displayName: '',
@@ -107,3 +107,4 @@ const SignUpForm = () => {
 };
 
 export default SignUpForm;
+
